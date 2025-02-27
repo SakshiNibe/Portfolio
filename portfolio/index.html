@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg py-3 bg-light sticky-top shadow-lg p-3 mb-5 rounded">
+        <a class="navbar-brand text-dark font-weight-bold" href="#">Sakshi Nibe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-dark font-weight-bold h5" href="#hero">Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-weight-bold h5" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-weight-bold h5" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark font-weight-bold h5" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="hero-content text-start">
+                        <h2 class="font-weight-bold">I'm</h2>
+                        <h1 class="h1 display-3 font-weight-bold name">Sakshi <span>Nibe</span></h1>
+                        <h2><span id="typed"></span></h2>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-github"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="about-image text-center">
+                                        <img src="about.jpeg" alt="About Image">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="about-content">
+                                        <h2 class="font-weight-bold">About Me</h2>
+                                        <p class="font-weight-bold">My name is Sakshi Nibe.I am study in second year of computer engineering. My Strengths are I am self motivated, dedicated and honest person. My hobbies are handwriting, reading books and cooking. Lastly, I am a quick learner and believe in learning from my past mistakes and experiences.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <p>HTML</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>CSS</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>JavaScript</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>Python</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <p>Java</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section ">
+        <div class="container">
+            <h2 class="text-center font-weight-bold mb-4">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card project-card my-2">
+                        <img src="project.jpg" class="card-img-top" alt="Project">
+                        <div class="card-body">
+                            <h5 class="card-title">covid19prediction</h5>
+                            <p class="card-text">This project aims to predict the recovery rate of COVID-19 patients at a district level using historical data, machine learning models, and statistical analysis. The prediction will help health officials and policymakers allocate resources efficiently, prepare for future outbreaks, and improve patient care strategies.</p>
+                        
+                            <a href="https://drive.google.com/file/d/1VrFZrjDEQK5YJLWdrRjm9uh5lDFWCIsr/view?usp=drivesdk" class="btn btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section bg-light">
+        <div class="container py-3">
+            <h2 class="text-center mb-4 font-weight-bold">Contact Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="">
+                        <img src="contact.jpeg"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form action="send_email.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div class="mt-4">
+                        <a href="https://www.linkedin.com/in/sakshi-nibe-64a2b3326" class="text-blue-600 mr-4">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
